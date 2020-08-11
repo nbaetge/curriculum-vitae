@@ -1,5 +1,4 @@
-# Eric Scott's Curriculum Vitae
+# Nicholas Baetge's Curriculum Vitae
 
-My CV made using the [vitae](https://github.com/ropenscilabs/vitae) package for R and a data science résumé built using the [pagedown](https://github.com/rstudio/pagedown) package.
+My CV made using the [vitae](https://github.com/ropenscilabs/vitae) package for R
 
-I'm actively looking for postdoc positions, so if you like what you see, please do contact me!
