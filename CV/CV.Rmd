@@ -198,7 +198,7 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
     journal = "JGR Atmospheres",
     number = " ",
     cites = 0,
-    year = "in review",
+    year = "in press",
     cid = NA,
     pubid = NA
   ) %>%
