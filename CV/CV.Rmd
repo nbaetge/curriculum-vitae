@@ -188,7 +188,7 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
     journal = "Frontiers in Marine Science",
     number = " ",
     cites = 0,
-    year = "in review",
+    year = "in press",
     cid = NA,
     pubid = NA
   ) %>%
