@@ -156,7 +156,7 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
     title = "Seasonality of the microbial community composition in the western North Atlantic",
     author = "Bolaños, L., Choi, C.J., Worden, A., Baetge, N., Carlson, C., Giovannoni, S",
     journal = "",
-    number = " ",
+    number = "",
     cites = 0,
     year = "in prep",
     cid = NA,
@@ -166,39 +166,9 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
     title = "Physiological state, virus infection, and mixing dynamics contextualize phytoplankton accumulation and loss in the North Atlantic",
     author = "Diaz, B., Knowles, B., Johns, C., Laber, C., Bondoc, K.G.V, Harvey, E., Lowenstein, D., Fredricks, H., Hunter, J., Haramaty, L., Natale, F., Graff, J., Haentjens, N., Baetge, N., Mojica, K., Gaube, P., Boss, E., Carlson, C., Behrenfeld, M., Van Mooy, B., and Bidle, K",
     journal = "",
-    number = " ",
+    number = "",
     cites = 0,
     year = "in prep",
-    cid = NA,
-    pubid = NA
-  ) %>%
-  add_row(
-    title = "Role of Sea Surface Microlayer Properties in Cloud Formation",
-    author = "Hendrickson, B., Brooks, S., Thornton, D., Moore, R., Crosbie, E., Ziemba, L., Carlson, C., Baetge, N., Mirrielees, J., and Alsante, A",
-    journal = "Frontiers in Marine Science",
-    number = " ",
-    cites = 0,
-    year = "in review",
-    cid = NA,
-    pubid = NA
-  ) %>%
-  add_row(
-    title = "Stable isotope probing identifies bacterioplankton lineages capable of utilizing dissolved organic matter across a range of bioavailability",
-    author = "Liu, S., Baetge, N., Comstock, J., Opalk, K., Parsons, R., Halewood, E., English, C., Giovannoni, S., Bolanos, L., Nelson, C., Vergin, K., Carlson, C",
-    journal = "Frontiers in Marine Science",
-    number = " ",
-    cites = 0,
-    year = "in press",
-    cid = NA,
-    pubid = NA
-  ) %>%
-  add_row(
-    title = "Seasonal Differences and Variability of Concentrations, Chemical Composition, and Cloud Condensation Nuclei of Marine Aerosol over the North Atlantic",
-    author = "Saliba, G., Chen, C., Lewis, S., Russell. L, Quinn, P., Bates, T., Bell, T., Lawler, M., Saltzman, E., Sanchez, K., Moore, R., Shook, M., Rivellini, L., Lee, A., Baetge, N., Carlson, C., Behrenfeld, M",
-    journal = "JGR Atmospheres",
-    number = " ",
-    cites = 0,
-    year = "in press",
     cid = NA,
     pubid = NA
   ) %>%
@@ -207,7 +177,7 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
     what = title,
     when = year,
     with = author,
-    where = journal
+    where = paste(journal, number, sep = ". ")
   )
  #bibliography_entries(file = "~/GITHUB/curriculum-vitae/data/MyPublications.bib", title = NULL)
 ```
