@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.11)  28 SEP 2020 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.11)  19 JAN 2021 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -631,32 +631,26 @@ Underfull \hbox (badness 1655) in paragraph at lines 104--104
 on de-mand\T1/lmr/m/n/10.95 (+20) ,
  []
 
-[3]
-Underfull \hbox (badness 1132) in paragraph at lines 114--114
-[]|\T1/lmr/bx/n/10.95 Introductionary Bi-ol-ogy Lab-o-ra-tory (EEMB 3L) TA\T1/l
-mr/m/n/10.95 (+20) , UC Santa
- []
-
-[4] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+[3] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
 (./vitae.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
 Package rerunfilecheck Info: File `vitae.out' has not changed.
-(rerunfilecheck)             Checksum: 53E7B0F1F348C2E1F92827C7F589B3BC;1345.
+(rerunfilecheck)             Checksum: B77BEC4AEEF8E8C9F1DADF92398A1BC9;1590.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13756 strings out of 482841
- 214126 string characters out of 5952941
- 505725 words of memory out of 5000000
- 28803 multiletter control sequences out of 15000+600000
- 592603 words of font info for 89 fonts, out of 8000000 for 9000
+ 13763 strings out of 482841
+ 214260 string characters out of 5952941
+ 507851 words of memory out of 5000000
+ 28805 multiletter control sequences out of 15000+600000
+ 592734 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,13n,70p,2835b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,13n,70p,3071b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/nicholasbaetge/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome
 /fontawesomethree.enc}{/Users/nicholasbaetge/Library/TinyTeX/texmf-dist/fonts/e
 nc/dvips/dejavu/dejavumono_t1-type1.enc}{/Users/nicholasbaetge/Library/TinyTeX/
@@ -672,10 +666,10 @@ fonts/type1/public/lm/lmr12.pfb></Users/nicholasbaetge/Library/TinyTeX/texmf-di
 st/fonts/type1/public/lm/lmr17.pfb></Users/nicholasbaetge/Library/TinyTeX/texmf
 -dist/fonts/type1/public/lm/lmro10.pfb></Users/nicholasbaetge/Library/TinyTeX/t
 exmf-dist/fonts/type1/public/lm/lmro17.pfb>
-Output written on vitae.pdf (5 pages, 218951 bytes).
+Output written on vitae.pdf (4 pages, 218928 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 18529 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 18537 words of extra memory for PDF output out of 20736 (max. 10000000)
 
