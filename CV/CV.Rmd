@@ -1,6 +1,6 @@
 ---
 name: "Nicholas Baetge"
-position: "PhD Candidate"
+position: "PhD Candidate, Marine Science"
 address: "UC Santa Barbara, IGP-Marine Science"
 phone: +1 310-944-4660
 www: nbaetge.github.io
@@ -122,7 +122,7 @@ detailed_entries(edu,
 ```{r}
 awards %>%
   filter(tag == "grant") %>%
-  detailed_entries(what = award, when = date, with = with, why = amount)
+  brief_entries(what = award, when = date, with = with)
 ```
 
 # Awards and Honors
@@ -155,7 +155,7 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
    add_row(
     title = "Seasonality of the microbial community composition in the western North Atlantic",
     author = "Bolaños, L., Choi, C.J., Worden, A., Baetge, N., Carlson, C., Giovannoni, S",
-    journal = "Frontiers",
+    journal = "Frontiers in Marine Science",
     number = "",
     cites = 0,
     year = "in press",
@@ -187,7 +187,7 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
 
 # Presentations
 
-## Research Talks
+## Selected Research Talks
 
 ```{r}
 presentations %>% 
@@ -201,7 +201,7 @@ presentations %>%
                    .protect = FALSE)
 ```
 
-## Posters
+## Selected Posters
 
 ```{r}
 presentations %>% 
@@ -211,7 +211,6 @@ presentations %>%
                    when = glue("{month(When, label = TRUE)} {year(When)}"),
                    with = Conference,
                    where = Location,
-                   why = Award,
                    .protect = FALSE)
 ```
 
@@ -221,10 +220,10 @@ presentations %>%
 jobs %>%
   filter(Tag == "teaching", year(Start) > 2005) %>%
   arrange(desc(Start)) %>% 
-  detailed_entries(
+  brief_entries(
     what = What,
     when = When,
-    where = Where,
+    with = Where,
     .protect = FALSE
   )
 ```
@@ -235,10 +234,10 @@ jobs %>%
 jobs %>%
   filter(Tag == "mentorship", year(Start) > 2005) %>%
   arrange(desc(Start)) %>% 
-  detailed_entries(
+  brief_entries(
     what = What,
     when = When,
-    where = Where,
+    with = Where,
     .protect = FALSE
   )
 ```
@@ -249,10 +248,9 @@ jobs %>%
 ```{r}
 fieldwork %>%
   arrange(desc(When)) %>%
-  detailed_entries(when = When,
+  brief_entries(when = When,
                    what = What,
-                   with = With,
-                   where = Days)
+                   with = With)
 ```
 
 # Service
@@ -261,18 +259,20 @@ fieldwork %>%
 jobs %>%
   filter(Tag == "service") %>% 
   arrange(desc(When)) %>%
-  detailed_entries(
+  brief_entries(
     what = What,
     when = When,
-    where = Where
+    with = Where
   )
 ```
 
-**Manuscript Reviews**
 
-- Science Advances (1)
-- Aquatic Microbial Ecology (1)
-- ISME (1)
+
+## Manuscript Reviews
+\setlength{\leftskip}{2.5cm}
+Science Advances (1), Aquatic Microbial Ecology (1), ISME (1)
+
+\setlength{\leftskip}{0pt}
 
 # Professional Development
 
