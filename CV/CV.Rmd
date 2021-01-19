@@ -158,7 +158,7 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
     journal = "Frontiers",
     number = "",
     cites = 0,
-    year = "in review",
+    year = "in press",
     cid = NA,
     pubid = NA
   ) %>%
@@ -166,16 +166,6 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
     title = "Seasonal mixed layer dynamics shape phytoplankton physiology, viral infection, and accumulation in the North Atlantic",
     author = "Diaz, B., Knowles, B., Johns, C., Laber, C., Bondoc, K.G.V, Harvey, E., Lowenstein, D., Fredricks, H., Haramaty, L., Natale, F., Graff, J., Westberry, T., Haentjens, N., Baetge, N., Mojica, K., Gaube, P., Boss, E., Carlson, C., Behrenfeld, M., Van Mooy, B., and Bidle, K",
     journal = "Nature Communications",
-    number = "",
-    cites = 0,
-    year = "in review",
-    cid = NA,
-    pubid = NA
-  ) %>%
-  add_row(
-    title = "Role of Sea Surface Microlayer Properties in Cloud Formation",
-    author = "Hendrickson, B., Brooks, S., Thornton, D., Moore, R., Crosbie, E., Ziemba, L., Carlson, C., Baetge, N., Mirrielees, J., and Alsante, A",
-    journal = "Frontiers",
     number = "",
     cites = 0,
     year = "in review",
