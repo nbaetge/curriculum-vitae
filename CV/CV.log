@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.11)  19 FEB 2021 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.11)  19 FEB 2021 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -646,7 +646,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  13759 strings out of 482841
  214036 string characters out of 5952941
- 508845 words of memory out of 5000000
+ 508917 words of memory out of 5000000
  28805 multiletter control sequences out of 15000+600000
  592533 words of font info for 89 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -666,7 +666,7 @@ fonts/type1/public/lm/lmr12.pfb></Users/nicholasbaetge/Library/TinyTeX/texmf-di
 st/fonts/type1/public/lm/lmr17.pfb></Users/nicholasbaetge/Library/TinyTeX/texmf
 -dist/fonts/type1/public/lm/lmro10.pfb></Users/nicholasbaetge/Library/TinyTeX/t
 exmf-dist/fonts/type1/public/lm/lmro17.pfb>
-Output written on CV.pdf (5 pages, 219584 bytes).
+Output written on CV.pdf (5 pages, 220168 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  151 compressed objects within 2 object streams

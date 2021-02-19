@@ -1,6 +1,6 @@
 ---
 name: "Nicholas Baetge"
-position: "PhD Candidate, Marine Science"
+position: "PhD Candidate, Marine Science (he, him)"
 address: "UC Santa Barbara, IGP-Marine Science"
 phone: +1 310-944-4660
 www: nbaetge.github.io
