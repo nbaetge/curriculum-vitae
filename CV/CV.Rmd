@@ -143,25 +143,15 @@ scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>%
   mutate_at(vars(year), as.character) %>% 
   #in prep/review
   dplyr::add_row(
-    title = "Seasonal Regulation and Fate of Dissolved Organic Carbon Accumulation in the Northwest Atlantic",
+    title = "Seasonal Flux and Fate of Dissolved Organic Carbon through the Food Web in the Western North Atlantic",
     author = "Baetge, N., Carlson, C., et al",
     journal = "",
     number = " ",
     cites = 0,
-    year = "in prep",
+    year = "in review",
     cid = NA,
     pubid = NA
     ) %>%
-   add_row(
-    title = "Seasonality of the microbial community composition in the western North Atlantic",
-    author = "Bolaños, L., Choi, C.J., Worden, A., Baetge, N., Carlson, C., Giovannoni, S",
-    journal = "Frontiers in Marine Science",
-    number = "",
-    cites = 0,
-    year = "in press",
-    cid = NA,
-    pubid = NA
-  ) %>%
   add_row(
     title = "Seasonal mixed layer dynamics shape phytoplankton physiology, viral infection, and accumulation in the North Atlantic",
     author = "Diaz, B., Knowles, B., Johns, C., Laber, C., Bondoc, K.G.V, Harvey, E., Lowenstein, D., Fredricks, H., Haramaty, L., Natale, F., Graff, J., Westberry, T., Haentjens, N., Baetge, N., Mojica, K., Gaube, P., Boss, E., Carlson, C., Behrenfeld, M., Van Mooy, B., and Bidle, K",
