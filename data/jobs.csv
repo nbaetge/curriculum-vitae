@@ -1,11 +1,11 @@
-Start,End,What,Where,Tag
-9/1/16,9/1/18,EEMB/IGPMS Graduate Student Advisory Committee,UC Santa Barbara,service
-9/1/16,9/1/17,Marine Science Seminar Coordinator,UC Santa Barbara,service
-3/19/19,3/19/19,Sacramento Graduate Research Day Delegate,UC Santa Barbara,service
-9/1/15,12/20/16,Introductionary Biology Laboratory (EEMB 3L) TA ,UC Santa Barbara,teaching
-9/1/18,12/20/20,Marine Microbiology Laboratory (EEMB 144L) TA,UC Santa Barbara,teaching
-9/1/18,6/15/19,Ruby Korpics,UC Santa Barbara,mentorship
-9/1/14,9/1/17,IGPMS Social Chair,UC Santa Barbara,service
-8/1/20,Pres.,Tutor the Future,Santa Barbara,service
-7/1/20,Pres.,IGPMS DEI Working Group,UC Santa Barbara,service
-7/3/19,7/3/19,Ocean Portal Marine Microbes Contributor,Smithsonian Institution,service
+Start,End,What,Where,Tag,short
+9/1/16,9/1/18,EEMB/IGPMS Graduate Student Advisory Committee,UC Santa Barbara,service,FALSE
+9/1/16,9/1/17,Marine Science Seminar Coordinator,UC Santa Barbara,service,FALSE
+3/19/19,3/19/19,Sacramento Graduate Research Day Delegate,UC Santa Barbara,service,TRUE
+9/1/15,12/20/16,Introductionary Biology Laboratory (EEMB 3L) TA ,UC Santa Barbara,teaching,FALSE
+9/1/18,12/20/20,Marine Microbiology Laboratory (EEMB 144L) TA,UC Santa Barbara,teaching,TRUE
+9/1/18,6/15/19,Ruby Korpics,UC Santa Barbara,mentorship,TRUE
+9/1/14,9/1/17,IGPMS Social Chair,UC Santa Barbara,service,FALSE
+8/1/20,Pres.,Tutor the Future,Santa Barbara,service,FALSE
+7/1/20,Pres.,IGPMS DEI Working Group,UC Santa Barbara,service,FALSE
+7/3/19,7/3/19,Ocean Portal Marine Microbes Contributor,Smithsonian Institution,service,FALSE

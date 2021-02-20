@@ -1,0 +1,236 @@
+---
+name: "Nicholas Baetge"
+position: "PhD Candidate, Marine Science (he, him)"
+address: "UC Santa Barbara, IGP-Marine Science"
+phone: +1 310-944-4660
+www: nbaetge.github.io
+email: nicholasbaetge@gmail.com
+twitter: nbaetge91
+github: nbaetge
+aboutme: ""
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::moderncv:
+    theme: casual
+
+---
+
+```{r eval=FALSE, include=FALSE}
+# Remember to spell check!!
+data_files <- list.files(here("data"), pattern = ".csv", full.names = TRUE)
+spelling::spell_check_files(c("CV_short.Rmd", data_files))
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(lubridate)
+library(here)
+library(readxl)
+library(glue)
+library(conflicted)
+conflict_prefer("filter", "dplyr")
+conflict_prefer("here", "here")
+```
+
+```{r experience, inclue=FALSE}
+jobs.raw <- read_csv(here::here("data", "jobs.csv"))
+jobs <-
+  jobs.raw %>% 
+  fill(Start, End, What,  Where, Tag) %>%  
+  mutate(Start = mdy(Start),
+         End = mdy(End)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  )) %>% 
+  mutate(End = if_else(is.na(End), today() + years(2), End)) #if no end date specified, set it to two years from now for sorting purposes, i.e. so jobs I'm still doing show up at top.
+```
+
+```{r presentations, include=FALSE}
+presentations.raw <- read_csv(here("data", "presentations.csv"))
+presentations <- 
+  presentations.raw %>% 
+  mutate(When = mdy(When)) %>% 
+  filter(When < today()) #exclude upcoming talks 
+
+```
+
+```{r prof-devel, include=FALSE}
+development.raw <- read_csv(here("data", "professional development.csv"))
+development <- 
+  development.raw %>% 
+  mutate(Start = mdy(start),
+         End = mdy(end)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  ))
+```
+
+```{r awards, include=FALSE}
+awards.raw <- read_csv(here("data", "awards and grants.csv"))
+awards <- awards.raw %>% 
+  arrange(desc(date))
+```
+
+```{r edu, include=FALSE}
+edu.raw <- read_csv(here("data", "education.csv")) %>% 
+  mutate(Start = mdy(start_date),
+         End = mdy(end_date)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  )) %>% 
+  mutate(End = if_else(is.na(End), today() + years(2), End))
+```
+
+```{r outreach, include=FALSE}
+
+fieldwork.raw <- read_csv(here("data", "fieldwork.csv"))
+fieldwork <- fieldwork.raw %>% 
+  mutate(When = mdy(When),
+         When = year(When))
+```
+
+
+# Education 
+
+```{r }
+brief_entries(edu.raw, 
+                 when = When,
+                 what = degree,
+                 with = paste(university, department, sep = ", "))
+
+```
+
+# Grants
+
+```{r}
+awards %>%
+  filter(tag == "grant", short == TRUE) %>%
+  brief_entries(what = award, when = date, with = with)
+```
+
+# Awards and Honors
+
+```{r}
+ awards %>% 
+  filter(!tag %in% c("failed", "travel", "grant"), short == TRUE) %>% 
+  brief_entries(what = award, when = date, with = with)
+```
+
+# Publications
+
+<!-- ^\*^ indicates undergraduate mentee author   -->
+
+```{r publications}
+
+scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>% 
+  mutate_at(vars(year), as.character) %>% 
+  #in prep/review
+  dplyr::add_row(
+    title = "Seasonal Flux and Fate of Dissolved Organic Carbon through the Food Web in the Western North Atlantic",
+    author = "Baetge et al.",
+    journal = "Frontiers in Microbiology",
+    number = " ",
+    cites = 0,
+    year = "in review",
+    cid = NA,
+    pubid = NA
+    ) %>%
+  add_row(
+    title = "Seasonal mixed layer dynamics shape phytoplankton physiology, viral infection, and accumulation in the North Atlantic",
+    author = "Diaz et al.",
+    journal = "Nature Communications",
+    number = "",
+    cites = 0,
+    year = "in review",
+    cid = NA,
+    pubid = NA
+  ) %>%
+  arrange(desc(year)) %>%
+  brief_entries(
+    what = title,
+    when = year,
+    with = paste(author, journal, sep = ". ")
+  )
+ #bibliography_entries(file = "~/GITHUB/curriculum-vitae/data/MyPublications.bib", title = NULL)
+```
+
+
+# Teaching Experience
+
+```{r}
+jobs %>%
+  filter(Tag == "teaching", year(Start) > 2005, short == T) %>%
+  arrange(desc(Start)) %>% 
+  brief_entries(
+    what = What,
+    when = When,
+    with = Where,
+    .protect = FALSE
+  )
+```
+
+## Mentorship
+
+```{r}
+jobs %>%
+  filter(Tag == "mentorship", year(Start) > 2005) %>%
+  arrange(desc(Start)) %>% 
+  brief_entries(
+    what = What,
+    when = When,
+    with = Where,
+    .protect = FALSE
+  )
+```
+
+# Cruise Experience
+
+```{r}
+fieldwork %>%
+  arrange(desc(When)) %>%
+  brief_entries(when = When,
+                   what = What,
+                   with = With)
+```
+
+# Service
+
+```{r}
+jobs %>%
+  filter(Tag == "service", short == TRUE) %>% 
+  arrange(desc(When)) %>%
+  brief_entries(
+    what = What,
+    when = When,
+    with = Where
+  )
+```
+
+
+
+## Manuscript Reviews
+\setlength{\leftskip}{2.5cm}
+Science Advances (1), Aquatic Microbial Ecology (1), ISME (1)
+
+\setlength{\leftskip}{0pt}
+
+# Professional Development
+
+```{r}
+development %>% 
+  brief_entries(
+    what = title,
+    when = When,
+    with = location
+  )
+```
+
+\pagebreak
