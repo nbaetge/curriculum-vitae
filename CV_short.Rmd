@@ -1,7 +1,7 @@
 ---
 name: "Nicholas Baetge"
-position: "PhD Candidate, Marine Science (he, him)"
-address: "UC Santa Barbara, IGP-Marine Science"
+position: "Postdoctoral Scholar (he, him)"
+address: "Oregon State University"
 phone: +1 310-944-4660
 www: nbaetge.github.io
 email: nicholasbaetge@gmail.com
@@ -20,6 +20,12 @@ output:
 data_files <- list.files(here("data"), pattern = ".csv", full.names = TRUE)
 spelling::spell_check_files(c("CV_short.Rmd", data_files))
 ```
+
+```{r eval=FALSE, include=FALSE}
+#To update CV on my website, run the following code in the console:
+rmarkdown::render("CV_short.Rmd", output_file = "~/GITHUB/nbaetge.github.io/vitae")
+```
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
@@ -42,7 +48,7 @@ jobs <-
   mutate(Start = mdy(Start),
          End = mdy(End)) %>% 
   mutate(When = case_when(
-    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    is.na(End) ~ glue("{year(Start)}--Pres.") %>% as.character(),
     year(Start) == year(End) ~ year(End) %>% as.character(),
     TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
   )) %>% 
@@ -65,7 +71,7 @@ development <-
   mutate(Start = mdy(start),
          End = mdy(end)) %>% 
   mutate(When = case_when(
-    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    is.na(End) ~ glue("{year(Start)}--Pres.") %>% as.character(),
     year(Start) == year(End) ~ year(End) %>% as.character(),
     TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
   ))
@@ -82,12 +88,25 @@ edu.raw <- read_csv(here("data", "education.csv")) %>%
   mutate(Start = mdy(start_date),
          End = mdy(end_date)) %>% 
   mutate(When = case_when(
-    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    is.na(End) ~ glue("{year(Start)}--Pres.") %>% as.character(),
     year(Start) == year(End) ~ year(End) %>% as.character(),
     TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
   )) %>% 
   mutate(End = if_else(is.na(End), today() + years(2), End))
 ```
+
+
+```{r employ, include=FALSE}
+employ.raw <- read_csv(here("data", "employment.csv")) %>% 
+  mutate(Start = mdy(start),
+         End = mdy(end)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Pres.") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  ))
+```
+
 
 ```{r outreach, include=FALSE}
 
@@ -106,6 +125,15 @@ brief_entries(edu.raw,
                  what = degree,
                  with = paste(university, department, sep = ", "))
 
+```
+
+# Employment
+
+```{r}
+brief_entries(employ.raw, 
+                 when = When,
+                 what = title,
+                 with = location)
 ```
 
 # Grants
@@ -133,23 +161,23 @@ awards %>%
 scholar::get_publications("Ca8wN7sAAAAJ", flush = TRUE) %>% 
   mutate_at(vars(year), as.character) %>% 
   #in prep/review
-  dplyr::add_row(
-    title = "Seasonal Flux and Fate of Dissolved Organic Carbon through the Food Web in the Western North Atlantic",
-    author = "Baetge et al.",
-    journal = "Frontiers in Microbiology",
-    number = " ",
-    cites = 0,
-    year = "in review",
-    cid = NA,
-    pubid = NA
-    ) %>%
   add_row(
     title = "Seasonal mixed layer dynamics shape phytoplankton physiology, viral infection, and accumulation in the North Atlantic",
     author = "Diaz et al.",
     journal = "Nature Communications",
     number = "",
     cites = 0,
-    year = "in review",
+    year = "in revision",
+    cid = NA,
+    pubid = NA
+  ) %>%
+  add_row(
+    title = "Investigating atmospheric inputs of dissolved black carbon to the Santa Barbara Channel during the Thomas Fire (California, USA)",
+    author = "Wagner et al.",
+    journal = "JGR Biogeosciences",
+    number = "",
+    cites = 0,
+    year = "in revision",
     cid = NA,
     pubid = NA
   ) %>%

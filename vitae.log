@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.11)  23 JUN 2021 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.11)  23 JUN 2021 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**CV_short.tex
-(./CV_short.tex
+**/Users/nicholasbaetge/GITHUB/nbaetge.github.io/vitae.tex
+(/Users/nicholasbaetge/GITHUB/nbaetge.github.io/vitae.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-08-07> (./moderncv.cls
 Document Class: moderncv 2015/07/28 v2.0.0 modern curriculum vitae and letter d
@@ -432,8 +432,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 71.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 71.
-(./CV_short.aux)
-\openout1 = `CV_short.aux'.
+(./vitae.aux)
+\openout1 = `vitae.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
@@ -540,9 +540,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 71.
 LaTeX Info: Redefining \pageref on input line 71.
 LaTeX Info: Redefining \nameref on input line 71.
-(./CV_short.out) (./CV_short.out)
+(./vitae.out) (./vitae.out)
 \@outlinefile=\write3
-\openout3 = `CV_short.out'.
+\openout3 = `vitae.out'.
 
 \makecvheadpicturebox=\box54
 \makecvheadpicturewidth=\skip84
@@ -628,23 +628,23 @@ This may cause the page layout to be inconsistent, however.
 .map}] [2] [3]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
-(./CV_short.aux)
+(./vitae.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
-Package rerunfilecheck Info: File `CV_short.out' has not changed.
+Package rerunfilecheck Info: File `vitae.out' has not changed.
 (rerunfilecheck)             Checksum: 2EEC714CBBC010652FAB9231639ADABF;1260.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13722 strings out of 482841
- 213601 string characters out of 5952941
- 507808 words of memory out of 5000000
+ 13723 strings out of 482841
+ 213695 string characters out of 5952941
+ 507802 words of memory out of 5000000
  28792 multiletter control sequences out of 15000+600000
  579691 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,13n,70p,2778b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,13n,70p,2822b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/nicholasbaetge/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome
 /fontawesomethree.enc}{/Users/nicholasbaetge/Library/TinyTeX/texmf-dist/fonts/e
 nc/dvips/dejavu/dejavumono_t1-type1.enc}{/Users/nicholasbaetge/Library/TinyTeX/
@@ -659,7 +659,7 @@ s/type1/public/lm/lmr12.pfb></Users/nicholasbaetge/Library/TinyTeX/texmf-dist/f
 onts/type1/public/lm/lmr17.pfb></Users/nicholasbaetge/Library/TinyTeX/texmf-dis
 t/fonts/type1/public/lm/lmro10.pfb></Users/nicholasbaetge/Library/TinyTeX/texmf
 -dist/fonts/type1/public/lm/lmro17.pfb>
-Output written on CV_short.pdf (3 pages, 171352 bytes).
+Output written on vitae.pdf (3 pages, 171352 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  121 compressed objects within 2 object streams

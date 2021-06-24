@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.11)  19 FEB 2021 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.11)  23 JUN 2021 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -644,13 +644,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 13760 strings out of 482841
- 214220 string characters out of 5952941
- 508923 words of memory out of 5000000
+ 13758 strings out of 482841
+ 214196 string characters out of 5952941
+ 508850 words of memory out of 5000000
  28805 multiletter control sequences out of 15000+600000
- 592533 words of font info for 89 fonts, out of 8000000 for 9000
+ 592415 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,13n,70p,3051b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,13n,70p,3073b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/nicholasbaetge/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome
 /fontawesomethree.enc}{/Users/nicholasbaetge/Library/TinyTeX/texmf-dist/fonts/e
 nc/dvips/dejavu/dejavumono_t1-type1.enc}{/Users/nicholasbaetge/Library/TinyTeX/
@@ -666,7 +666,7 @@ fonts/type1/public/lm/lmr12.pfb></Users/nicholasbaetge/Library/TinyTeX/texmf-di
 st/fonts/type1/public/lm/lmr17.pfb></Users/nicholasbaetge/Library/TinyTeX/texmf
 -dist/fonts/type1/public/lm/lmro10.pfb></Users/nicholasbaetge/Library/TinyTeX/t
 exmf-dist/fonts/type1/public/lm/lmro17.pfb>
-Output written on vitae.pdf (5 pages, 220168 bytes).
+Output written on vitae.pdf (5 pages, 220594 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  151 compressed objects within 2 object streams
